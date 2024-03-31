@@ -1,3 +1,57 @@
+@font-face { /* Include font Alata */
+	font-family: "Alata";
+	src: url("./fonts/Alata-Regular.ttf") format("truetype");
+	font-weight: 400
+}
+
+@font-face { /* Include font Josefine Sans */
+	font-family: "Josefine Sans";
+	src: url("./fonts/JosefinSans-Light.ttf") format("truetype");
+	font-weight: 300
+}
+
+body {
+	margin: 0 /* Removes white border around page */
+}
+
+h1, h2, span {
+	font-family: "Josefine Sans", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase
+}
+
+a, button, p {
+	font-family: "Alata", sans-serif;
+	font-weight: 400;
+    font-size: 15px;
+}
+
+header {
+	height: 100vh; /* Sets height to "1 display" */
+	background-size: cover; /* Scales image to box size */
+}
+
+@media(max-width: 1199px) {
+	header {
+	    background-image: url("./images/mobile/image-hero.jpg");
+    }
+}
+
+@media(min-width: 1200px) {
+	header {
+		background-image: url("./images/desktop/image-hero.jpg")
+	}
+}
+
+.logo_top {
+	width: 200px
+}
+
+.main_content_pane {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .attribution {
     font-size: 11px; text-align: center;
 }
