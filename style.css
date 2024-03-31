@@ -1,50 +1,111 @@
-@font-face { /* Include font Alata */
-	font-family: "Alata";
-	src: url("./fonts/Alata-Regular.ttf") format("truetype");
-	font-weight: 400
+@font-face {
+    /* Include font Alata */
+    font-family: "Alata";
+    src: url("./fonts/Alata-Regular.ttf") format("truetype");
+    font-weight: 400
 }
 
-@font-face { /* Include font Josefine Sans */
-	font-family: "Josefine Sans";
-	src: url("./fonts/JosefinSans-Light.ttf") format("truetype");
-	font-weight: 300
+@font-face {
+    /* Include font Josefine Sans */
+    font-family: "Josefine Sans";
+    src: url("./fonts/JosefinSans-Light.ttf") format("truetype");
+    font-weight: 300
 }
 
-body {
-	margin: 0 /* Removes white border around page */
+h1,
+h2,
+span {
+    font-family: "Josefine Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase
 }
 
-h1, h2, span {
-	font-family: "Josefine Sans", sans-serif;
-	font-weight: 300;
-	text-transform: uppercase
-}
-
-a, button, p {
-	font-family: "Alata", sans-serif;
-	font-weight: 400;
+a,
+button,
+p {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
     font-size: 15px;
 }
 
+a:link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+a:active {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0
+        /* Removes white border around page */
+}
+
 header {
-	height: 100vh; /* Sets height to "1 display" */
-	background-size: cover; /* Scales image to box size */
+    height: 100vh;
+    /* Sets height to "1 display height" */
+    background-size: cover;
+    /* Scales image to box size */
 }
 
 @media(max-width: 1199px) {
-	header {
-	    background-image: url("./images/mobile/image-hero.jpg");
+    header {
+        background-image: url("./images/mobile/image-hero.jpg");
     }
 }
 
 @media(min-width: 1200px) {
-	header {
-		background-image: url("./images/desktop/image-hero.jpg")
-	}
+    header {
+        background-image: url("./images/desktop/image-hero.jpg")
+    }
+}
+
+.top_bar {
+    padding-left: 12.3%;
+    padding-top: 4%;
 }
 
 .logo_top {
-	width: 200px
+    width: 18%;
+}
+
+.top_links {
+    display: inline;
+    float: right;
+    padding-right: 11%;
+}
+
+.top_link {
+    margin-left: 20px;
+}
+
+.eye_catch_box {
+    margin-top: 12%;
+    width: 50%;
+    border: solid;
+    border-color: hsl(0, 0%, 100%);
+}
+
+.eye_catch {
+    font-size: 100px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: hsl(0, 0%, 100%);
 }
 
 .main_content_pane {
@@ -53,7 +114,8 @@ header {
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
 
 .attribution a {
