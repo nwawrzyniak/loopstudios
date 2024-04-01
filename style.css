@@ -287,6 +287,7 @@ button:hover {
 }
 
 .creation_frame {
+    position: relative;
     width: auto;
     height: 300px;
     margin-top: 1.5%;
@@ -314,13 +315,27 @@ button:hover {
 .creation_frame:hover {
     cursor: pointer;
     color: hsl(0, 0%, 0%);
-    /* ToDo */
+}
+
+@media (min-width: 1200px) {
+    .creation_frame:hover::before {
+        display: block;
+        content: " ";
+        background-color: hsl(0, 0%, 100%);
+        opacity: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
 }
 
 .creation_frame span {
     display: block;
     margin-top: 10%;
     margin-left: 8%;
+    position: relative;
 }
 
 @media (min-width: 1200px) {
