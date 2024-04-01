@@ -15,13 +15,13 @@
 <body>
   <header>
     <div class="top_bar">
-      <img class="logo_top" src="./images/logo.svg" alt="Loopstudios" />
+      <img class="logo_top" src="./images/logo.svg" />
       <div class="top_links">
-        <a href="#" class="top_link">About</a>
-        <a href="#" class="top_link">Careers</a>
-        <a href="#" class="top_link">Events</a>
-        <a href="#" class="top_link">Products</a>
-        <a href="#" class="top_link">Support</a>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
       </div>
       <div class="eye_catch_box">
         <h1 class="eye_catch">Immersive experiences that deliver</h1>
@@ -29,13 +29,14 @@
     </div>
   </header>
   <div id="main_content" class="main_content_pane">
-    <div id="vr_guy_and_text">
-      <div class="overlapped_picture"></div>
-      <div class="overlapping_text">
-        <h2 class="overlapping_headline">The leader in interactive VR</h2>
-        <p class="overlapping_subtext">Founded in 2011, Loopstudios has been producing world-class virtual reality
-          projects for some of the best companies around the globe. Our award-winning creations have transformed
-          businesses through digital experiences that bind to their brand.</p>
+    <div class="vr_guy_and_text">
+      <div class="overlapped_picture">
+        <div class="overlapping_text">
+          <h2>The leader in interactive VR</h2>
+          <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning creations have transformed
+            businesses through digital experiences that bind to their brand.</p>
+        </div>
       </div>
     </div>
     <div class="our_creations_box">
@@ -43,24 +44,36 @@
       <button class="see_all_button" type="button">See all</button>
     </div>
     <div class="all_creations">
-      <div class="creation_frame" id="deep_earth">Deep earth</div>
-      <div class="creation_frame" id="night_arcade">Night arcade</div>
-      <div class="creation_frame" id="soccer_team_vr">Soccer team VR</div>
-      <div class="creation_frame" id="the_grid">The grid</div>
-      <div class="creation_frame" id="from_up_above_vr">From up above VR</div>
-      <div class="creation_frame" id="pocket_borealis">Pocket borealis</div>
-      <div class="creation_frame" id="the_curiosity">The curiosity</div>
-      <div class="creation_frame" id="make_it_fisheye">Make it fisheye</div>
+      <div class="creation_frame" id="deep_earth"><span>Deep<br>earth</span></div>
+      <div class="creation_frame" id="night_arcade"><span>Night<br>arcade</span></div>
+      <div class="creation_frame" id="soccer_team_vr"><span>Soccer<br>team VR</span></div>
+      <div class="creation_frame" id="the_grid"><span>The<br>grid</span></div>
+      <div class="creation_frame" id="from_up_above_vr"><span>From up<br>above VR</span></div>
+      <div class="creation_frame" id="pocket_borealis"><span>Pocket<br>borealis</span></div>
+      <div class="creation_frame" id="the_curiosity"><span>The<br>curiosity</span></div>
+      <div class="creation_frame" id="make_it_fisheye"><span>Make it<br>fisheye</span></div>
     </div>
   </div>
-
   <footer>
-    <a href="#" class="footer_link">About</a>
-    <a href="#" class="footer_link">Careers</a>
-    <a href="#" class="footer_link">Events</a>
-    <a href="#" class="footer_link">Products</a>
-    <a href="#" class="footer_link">Support</a>
-    <p class="footer_rights">© 2021 Loopstudios. All rights reserved.</p>
+    <div class="footer_first_row">
+      <img class="logo_footer" src="./images/logo.svg" />
+      <div class="social_links">
+        <a href="#"><img class="social_link" src="./images/icon-facebook.svg" /></a>
+        <a href="#"><img class="social_link" src="./images/icon-twitter.svg" /></a>
+        <a href="#"><img class="social_link" src="./images/icon-pinterest.svg" /></a>
+        <a href="#"><img class="social_link" src="./images/icon-instagram.svg" /></a>
+      </div>
+    </div>
+    <div class="footer_second_row">
+      <div class="footer_menu">
+        <a href="#" class="footer_link">About</a>
+        <a href="#" class="footer_link">Careers</a>
+        <a href="#" class="footer_link">Events</a>
+        <a href="#" class="footer_link">Products</a>
+        <a href="#" class="footer_link">Support</a>
+      </div>
+      <p class="footer_rights">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
     <!--
     <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

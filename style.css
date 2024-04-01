@@ -20,6 +20,11 @@ span {
     text-transform: uppercase
 }
 
+
+h2 {
+    font-size: 64px;
+}
+
 a,
 button,
 p {
@@ -39,7 +44,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
@@ -50,8 +55,8 @@ a:active {
 }
 
 body {
-    margin: 0
-        /* Removes white border around page */
+    margin: 0;
+    /* Removes white border around page */
 }
 
 header {
@@ -59,13 +64,9 @@ header {
     /* Sets height to "1 display height" */
     background-size: cover;
     /* Scales image to box size */
+    background-image: url("./images/mobile/image-hero.jpg");
 }
 
-@media(max-width: 1199px) {
-    header {
-        background-image: url("./images/mobile/image-hero.jpg");
-    }
-}
 
 @media(min-width: 1200px) {
     header {
@@ -83,18 +84,27 @@ header {
 }
 
 .top_links {
-    display: inline;
     float: right;
     padding-right: 11%;
 }
 
-.top_link {
+.top_links a {
+    display: inline-block;
     margin-left: 20px;
+    height: 35px;
+    background-image: none;
+    background-repeat: no-repeat no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.top_links a:hover {
+    background-image: url("./images/bar.png");
 }
 
 .eye_catch_box {
     margin-top: 12%;
-    width: 50%;
+    max-width: 790px;
     border: solid;
     border-color: hsl(0, 0%, 100%);
 }
@@ -109,8 +119,261 @@ header {
 }
 
 .main_content_pane {
-    padding-left: 5%;
-    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12.3%;
+    padding-right: 11%;
+}
+
+.vr_guy_and_text {
+    padding-top: 15%;
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.overlapped_picture {
+    border: solid;
+    /* WHY THE FCK IS THIS NEEDED?!??!*/
+    background-image: url("./images/mobile/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+    width: 654px;
+}
+
+@media (min-width: 1200px) {
+    .overlapped_picture {
+        border: solid;
+        /* WHY THE FCK IS THIS NEEDED?!??!*/
+        background-image: url("./images/desktop/image-interactive.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        width: 877px;
+    }
+}
+
+.overlapping_text {
+    width: 60%;
+    margin-left: 80%;
+    margin-top: 20%;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    padding-top: 10%;
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+}
+
+.overlapping_text p {
+    color: hsl(0, 0%, 55%);
+}
+
+.our_creations_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_creations_label {
+    float: left;
+}
+
+.see_all_button {
+    margin: auto 0;
+    float: right;
+    width: 300px;
+    height: 40px;
+    
+}
+
+button {
+    text-transform: uppercase;
+    width: 10%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.all_creations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.creation_frame {
+    width: 320px;
+    height: 563px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    font-size: 50px;
+    font-family: "Josefine Sans", sans-serif;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creation_frame:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+    /* ToDo */
+}
+
+.creation_frame span {
+    display: block;
+    margin-top: 130%;
+    margin-left: 10%;
+}
+
+#deep_earth {
+    background-image: url(./images/mobile/image-deep-earth.jpg);
+}
+
+@media (min-width: 1200px) {
+    #deep_earth {
+        background-image: url(./images/desktop/image-deep-earth.jpg);
+    }
+}
+
+#night_arcade {
+    background-image: url(./images/mobile/image-night-arcade.jpg);
+}
+
+@media (min-width: 1200px) {
+    #night_arcade {
+        background-image: url(./images/desktop/image-night-arcade.jpg);
+    }
+}
+
+#soccer_team_vr {
+    background-image: url(./images/mobile/image-soccer-team.jpg);
+}
+
+@media (min-width: 1200px) {
+    #soccer_team_vr {
+        background-image: url(./images/desktop/image-soccer-team.jpg);
+    }
+}
+
+#the_grid {
+    background-image: url(./images/mobile/image-grid.jpg);
+}
+
+@media (min-width: 1200px) {
+    #the_grid {
+        background-image: url(./images/desktop/image-grid.jpg);
+    }
+}
+
+#from_up_above_vr {
+    background-image: url(./images/mobile/image-from-above.jpg);
+}
+
+@media (min-width: 1200px) {
+    #from_up_above_vr {
+        background-image: url(./images/desktop/image-from-above.jpg);
+    }
+}
+
+#pocket_borealis {
+    background-image: url(./images/mobile/image-pocket-borealis.jpg);
+}
+
+@media (min-width: 1200px) {
+    #pocket_borealis {
+        background-image: url(./images/desktop/image-pocket-borealis.jpg);
+    }
+}
+
+#the_curiosity {
+    background-image: url(./images/mobile/image-curiosity.jpg);
+}
+
+@media (min-width: 1200px) {
+    #the_curiosity {
+        background-image: url(./images/desktop/image-curiosity.jpg);
+    }
+}
+
+#make_it_fisheye {
+    background-image: url(./images/mobile/image-fisheye.jpg);
+}
+
+@media (min-width: 1200px) {
+    #make_it_fisheye {
+        background-image: url(./images/desktop/image-fisheye.jpg);
+    }
+}
+
+footer {
+    background-color: hsl(0, 0%, 0%);
+}
+
+footer p {
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 0;
+}
+
+.footer_first_row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    margin-left: 12%;
+    margin-right: 6%;
+}
+
+.logo_footer {
+    width: 200px;
+}
+
+.social_links {
+    width: 250px;
+}
+
+.social_link {
+    width: 30px;
+    margin-left: 15px;
+}
+
+.social_link:hover {
+    /* ToDo */
+}
+
+.footer_second_row {
+    border-color: white;
+    height: 10px;
+    margin-top: 1%;
+    margin-left: 12%;
+    margin-right: 9%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.footer_link {
+    display: flex;
+}
+
+.footer_link:hover {
+    /* ToDo */
+}
+
+.footer_rights {
+    margin: auto 0;
 }
 
 .attribution {
