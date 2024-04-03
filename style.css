@@ -163,7 +163,6 @@ header {
 .vr_guy_and_text {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-bottom: calc(18em + 12vw);
     margin-top: 10%;
 }
