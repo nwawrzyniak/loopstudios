@@ -506,10 +506,10 @@ button:hover {
 
 footer {
     background-color: hsl(0, 0%, 0%);
-    padding-top: 5vh;
+    padding-top: 4.5vh;
     padding-left: 12vw;
     padding-right: 12vw;
-    padding-bottom: 3vh;
+    padding-bottom: 4vh;
 }
 
 footer p {
@@ -593,7 +593,6 @@ footer p {
 
 .footer_link {
     display: inline-block;
-    height: 35px;
     margin-right: 2vw;
 }
 
