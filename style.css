@@ -507,14 +507,15 @@ button:hover {
 footer {
     background-color: hsl(0, 0%, 0%);
     padding-top: 8vh;
-    padding-left: 12vw;
-    padding-right: 12vw;
-    padding-bottom: 4vh;
+    padding-bottom: 6vh;
 }
 
 @media (min-width: 1200px) {
     footer {
         padding-top: 4.5vh;
+        padding-left: 12vw;
+        padding-right: 12vw;
+        padding-bottom: 4vh;
     }
 }
 
@@ -538,8 +539,8 @@ footer p {
 
 .logo_footer {
     width: 40vw;
-    margin-left: 18vw;
-    margin-right: 18vw;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 4vh;
     order: 1;
     align-content: center;
@@ -556,24 +557,39 @@ footer p {
 .social_links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    width: 40vw;
     order: 3;
 }
 
 @media (min-width: 1200px) {
     .social_links {
         flex-direction: row-reverse;
+        justify-content: right;
         order: 2;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }
 
 .social_link {
     display: inline-block;
-    width: 30px;
-    margin-left: 15px;
+    width: 6vw;
     padding-bottom: 10px;
     background-repeat: no-repeat no-repeat;
     background-position-y: bottom;
     background-position-x: center;
+}
+
+@media (min-width: 1200px) {
+    .social_link {
+        width: 30px;
+        margin-left: 15px;
+    }
 }
 
 #social_facebook {
@@ -625,6 +641,9 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4vh;
     order: 2;
 }
 
@@ -632,13 +651,28 @@ footer p {
 @media(min-width: 1200px) {
     .footer_menu {
         flex-direction: row;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
         order: 3;
     }
 }
 
 .footer_link {
     display: inline-block;
-    margin-right: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    font-size: 3.5vw;
+}
+
+@media(min-width: 1200px) {
+    .footer_link {
+        margin-left: 0;
+        margin-right: 2vw;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
 }
 
 .footer_link:hover {
@@ -653,12 +687,18 @@ footer p {
     flex-direction: row;
     margin: auto 0;
     color: hsl(0, 0%, 55%);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4vw;
     order: 4;
 }
 
 @media(min-width: 1200px) {
     .footer_rights {
         flex-direction: row-reverse;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 15px;
     }
 }
 
