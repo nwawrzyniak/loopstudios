@@ -181,13 +181,14 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: calc(18em + 12vw);
-    margin-top: 10%;
+    margin-top: 15vh;
 }
 
 @media (min-width: 1200px) {
     .vr_guy_and_text {
         display: block;
         margin-bottom: 10%;
+        margin-top: 10%;
     }
 }
 
@@ -367,12 +368,9 @@ button:hover {
 .creation_frame {
     position: relative;
     width: auto;
-    height: 300px;
-    margin-top: 1.5%;
-    margin-bottom: 3%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    font-size: 70px;
+    height: 22vh;
+    margin-bottom: 3vh;
+    font-size: 6vw;
     font-family: "Josefine Sans", sans-serif;
     font-weight: 300;
     color: hsl(0, 0%, 100%);
@@ -386,13 +384,24 @@ button:hover {
         width: 320px;
         height: 563px;
         font-size: 50px;
-        margin-bottom: 1.5%;
+        margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .creation_frame {
+        font-size: 44px;
     }
 }
 
 .creation_frame:hover {
     cursor: pointer;
-    color: hsl(0, 0%, 0%);
+}
+
+@media (min-width: 1200px) {
+    .creation_frame:hover {
+        color: hsl(0, 0%, 0%);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -411,8 +420,8 @@ button:hover {
 
 .creation_frame span {
     display: block;
-    margin-top: 10%;
-    margin-left: 8%;
+    margin-left: 3vw;
+    margin-top: 8vh;
     position: relative;
 }
 
