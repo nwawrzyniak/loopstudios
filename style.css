@@ -81,12 +81,27 @@ header {
 }
 
 .logo_top {
-    width: 18%;
+    width: 30vw;
+}
+
+
+@media (min-width: 1200px) {
+    .logo_top {
+        width: 18%;
+    }
 }
 
 .top_links {
-    float: right;
-    padding-right: 11%;
+    visibility: hidden;
+}
+
+
+@media (min-width: 1200px) {
+    .top_links {
+        visibility: visible;
+        float: right;
+        padding-right: 11%;
+    }
 }
 
 .top_links a {
