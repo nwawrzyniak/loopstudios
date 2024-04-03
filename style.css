@@ -569,8 +569,8 @@ footer p {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2vh;
-    width: 45vw;
+    margin-bottom: 1vh;
+    width: 40vw;
     order: 3;
 }
 
@@ -579,15 +579,26 @@ footer p {
         flex-direction: row-reverse;
         justify-content: right;
         order: 2;
-        width: auto;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
     }
 }
 
-.social_links a {
-    margin-left: 1vw;
+.social_link {
+    display: inline-block;
+    width: 6vw;
+    padding-bottom: 10px;
+    background-repeat: no-repeat no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+@media (min-width: 1200px) {
+    .social_link {
+        width: 30px;
+        margin-left: 15px;
+    }
 }
 
 #social_facebook {
