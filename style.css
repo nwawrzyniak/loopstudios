@@ -564,6 +564,8 @@ footer p {
 }
 
 .social_links {
+    border: solid;
+    border-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -586,6 +588,8 @@ footer p {
 }
 
 .social_link {
+    border: solid;
+    border-color: white;
     display: inline-block;
     width: 6vw;
     padding-bottom: 10px;
@@ -617,6 +621,7 @@ footer p {
 
 @media(min-width: 1200px) {
     #social_twitter {
+        margin-top: 4px;
         order: 3;
     }
 }
