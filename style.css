@@ -506,10 +506,16 @@ button:hover {
 
 footer {
     background-color: hsl(0, 0%, 0%);
-    padding-top: 4.5vh;
+    padding-top: 8vh;
     padding-left: 12vw;
     padding-right: 12vw;
     padding-bottom: 4vh;
+}
+
+@media (min-width: 1200px) {
+    footer {
+        padding-top: 4.5vh;
+    }
 }
 
 footer p {
@@ -519,30 +525,43 @@ footer p {
 .footer_grid {
     display: grid;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: center;
     grid-template-columns: 1fr;
 }
 
 @media (min-width: 1200px) {
     .footer_grid {
+        justify-content: space-between;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 .logo_footer {
-    width: 10vw;
-    margin-bottom: 3vh;
+    width: 40vw;
+    margin-left: 18vw;
+    margin-right: 18vw;
+    margin-bottom: 4vh;
     order: 1;
+    align-content: center;
+}
+
+@media (min-width: 1200px) {
+    .logo_footer {
+        width: 10vw;
+        margin-left: 0;
+        margin-bottom: 3vh;
+    }
 }
 
 .social_links {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     order: 3;
 }
 
 @media (min-width: 1200px) {
     .social_links {
+        flex-direction: row-reverse;
         order: 2;
     }
 }
@@ -558,19 +577,43 @@ footer p {
 }
 
 #social_facebook {
-    order: 4;
+    order: 1;
+}
+
+@media(min-width: 1200px) {
+    #social_facebook {
+        order: 4;
+    }
 }
 
 #social_twitter {
-    order: 3;
-}
-
-#social_pinterest {
     order: 2;
 }
 
+@media(min-width: 1200px) {
+    #social_twitter {
+        order: 3;
+    }
+}
+
+#social_pinterest {
+    order: 3;
+}
+
+@media(min-width: 1200px) {
+    #social_pinterest {
+        order: 2;
+    }
+}
+
 #social_instagram {
-    order: 1;
+    order: 4;
+}
+
+@media(min-width: 1200px) {
+    #social_instagram {
+        order: 1;
+    }
 }
 
 .social_link:hover {
@@ -580,6 +623,7 @@ footer p {
 
 .footer_menu {
     display: flex;
+    flex-direction: column;
     justify-content: left;
     order: 2;
 }
@@ -587,6 +631,7 @@ footer p {
 
 @media(min-width: 1200px) {
     .footer_menu {
+        flex-direction: row;
         order: 3;
     }
 }
@@ -605,10 +650,16 @@ footer p {
 
 .footer_rights {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin: auto 0;
     color: hsl(0, 0%, 55%);
     order: 4;
+}
+
+@media(min-width: 1200px) {
+    .footer_rights {
+        flex-direction: row-reverse;
+    }
 }
 
 .attribution {
