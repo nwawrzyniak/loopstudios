@@ -72,6 +72,8 @@ header {
 }
 
 .top_bar {
+    display: flex;
+    justify-content: space-between;
     padding-left: 7vw;
     padding-top: 6vh;
 }
@@ -85,8 +87,8 @@ header {
 
 .logo_top {
     width: 30vw;
+    height: fit-content;
 }
-
 
 @media (min-width: 1200px) {
     .logo_top {
@@ -95,13 +97,12 @@ header {
 }
 
 .top_links {
-    visibility: hidden;
+    display: none;
 }
-
 
 @media (min-width: 1200px) {
     .top_links {
-        visibility: visible;
+        display: block;
         float: right;
         padding-right: 11%;
     }
@@ -118,6 +119,19 @@ header {
 
 .top_links a:hover {
     background-image: url("./images/bar.png");
+}
+
+.burger_top {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 8vw;
+    margin-bottom: 1vh;
+}
+
+@media (min-width: 1200px) {
+    .burger_top {
+        display: none;
+    }
 }
 
 .eye_catch_box {
