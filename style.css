@@ -61,6 +61,7 @@ body {
 
 header {
     height: 100vh;
+    width: auto;
     /* Sets height to "1 display height" */
     background-size: cover;
     /* Scales image to box size */
@@ -102,19 +103,45 @@ header {
 }
 
 .eye_catch_box {
-    margin-top: 12%;
-    max-width: 790px;
+    margin-top: calc(36vh - 18vw);
+    width: auto;
+    margin-left: calc(7vw);
+    margin-right: calc(7vw);
     border: solid;
     border-color: hsl(0, 0%, 100%);
 }
 
+
+@media (min-width: 1200px) {
+    .eye_catch_box {
+        margin-top: 12%;
+        margin-left: 12vw;
+        margin-right: 0;
+        width: calc(50vw);
+        border: solid;
+        border-color: hsl(0, 0%, 100%);
+    }
+}
+
 .eye_catch {
-    font-size: 100px;
+    font-size: calc(11vw);
     margin-top: 5%;
     margin-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
     color: hsl(0, 0%, 100%);
+}
+
+
+@media (min-width: 1200px) {
+    .eye_catch {
+        font-size: calc(5.4vw);
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: hsl(0, 0%, 100%);
+    }
 }
 
 .main_content_pane {
@@ -232,14 +259,14 @@ header {
 }
 
 @media (min-width: 1200px) {
-.our_creations_box {
-    display: flex;
-    justify-content: space-between;
-}
+    .our_creations_box {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .our_creations_label {
-    width:max-content;
+    width: max-content;
     margin-bottom: 10%;
     margin-left: 0;
     font-size: calc(8vw);
@@ -248,7 +275,7 @@ header {
 
 @media (min-width: 1200px) {
     .our_creations_label {
-        float:left;
+        float: left;
         font-size: 60px;
         text-align: left;
     }
