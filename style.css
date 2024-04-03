@@ -87,7 +87,7 @@ header {
 
 @media (min-width: 1200px) {
     .logo_top {
-        width: 18%;
+        width: 20vh;
     }
 }
 
