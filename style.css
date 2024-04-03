@@ -71,8 +71,15 @@ header {
 }
 
 .top_bar {
-    padding-left: 12.3%;
-    padding-top: 4%;
+    padding-left: 7vw;
+    padding-top: 6vh;
+}
+
+@media(min-width: 1200px) {
+    .top_bar {
+        padding-left: 12vw;
+        padding-top: 5vh;
+    }
 }
 
 .logo_top {
@@ -82,7 +89,7 @@ header {
 
 @media (min-width: 1200px) {
     .logo_top {
-        width: 20vh;
+        width: 14vw;
     }
 }
 
