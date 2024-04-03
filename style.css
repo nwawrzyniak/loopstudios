@@ -20,7 +20,8 @@ span {
     text-transform: uppercase
 }
 
-a,
+header a,
+.footer_menu a,
 button,
 p {
     font-family: "Alata", sans-serif;
@@ -28,25 +29,20 @@ p {
     font-size: 15px;
 }
 
-a:link {
+header a:link,
+header a:visited,
+header a:active,
+.footer_menu a:link,
+.footer_menu a:visited,
+.footer_menu a:active {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
 
-a:visited {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-}
-
-a:hover {
+header a:hover {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     cursor: pointer;
-}
-
-a:active {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
 }
 
 body {
