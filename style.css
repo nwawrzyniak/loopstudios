@@ -26,6 +26,11 @@ button,
 p {
     font-family: "Alata", sans-serif;
     font-weight: 400;
+}
+
+header a,
+button,
+p {
     font-size: 15px;
 }
 
@@ -190,9 +195,7 @@ header {
 
 @media (min-width: 1200px) {
     .vr_picture_mobile {
-        visibility: hidden;
-        width: 0;
-        height: 0;
+        display: none;
     }
 }
 
@@ -227,7 +230,6 @@ header {
 
 @media (min-width: 1200px) {
     .overlapping_text {
-        border: none;
         width: 60%;
         margin-left: 80%;
         margin-top: 20%;
@@ -311,15 +313,13 @@ header {
 
 @media (min-width: 1200px) {
     .see_all_button_mobile {
-        visibility: hidden;
-        height: 0;
+        display: none;
     }
 }
 
 @media (max-width: 1199px) {
     .see_all_button_desktop {
-        visibility: hidden;
-        width: 0;
+        display: none;
     }
 }
 
@@ -559,9 +559,7 @@ footer p {
     }
 }
 
-.social_links {
-    border: solid;
-    border-color: white;
+.social_link_box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -573,7 +571,7 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-    .social_links {
+    .social_link_box {
         flex-direction: row-reverse;
         justify-content: right;
         order: 2;
@@ -583,9 +581,7 @@ footer p {
     }
 }
 
-.social_link {
-    border: solid;
-    border-color: white;
+.social_link_image {
     display: inline-block;
     width: 6vw;
     padding-bottom: 10px;
@@ -595,7 +591,7 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-    .social_link {
+    .social_link_image {
         width: 30px;
         margin-left: 15px;
     }
@@ -612,12 +608,12 @@ footer p {
 }
 
 #social_twitter {
+    margin-top: 4px;
     order: 2;
 }
 
 @media(min-width: 1200px) {
     #social_twitter {
-        margin-top: 4px;
         order: 3;
     }
 }
@@ -642,7 +638,7 @@ footer p {
     }
 }
 
-.social_link:hover {
+.social_link_image:hover {
     display: inline-block;
     background-image: url("./images/bar.png");
 }
