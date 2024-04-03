@@ -122,8 +122,8 @@ header {
 .eye_catch_box {
     margin-top: calc(36vh - 18vw);
     width: auto;
-    margin-left: calc(7vw);
-    margin-right: calc(7vw);
+    margin-left: 7vw;
+    margin-right: 7vw;
     border: solid;
     border-color: hsl(0, 0%, 100%);
 }
@@ -134,14 +134,14 @@ header {
         margin-top: 12%;
         margin-left: 12vw;
         margin-right: 0;
-        width: calc(50vw);
+        width: 50vw;
         border: solid;
         border-color: hsl(0, 0%, 100%);
     }
 }
 
 .eye_catch {
-    font-size: calc(11vw);
+    font-size: 11vw;
     margin-top: 5%;
     margin-bottom: 5%;
     padding-left: 5%;
@@ -152,7 +152,7 @@ header {
 
 @media (min-width: 1200px) {
     .eye_catch {
-        font-size: calc(5.4vw);
+        font-size: 5.4vw;
         margin-top: 5%;
         margin-bottom: 5%;
         padding-left: 5%;
@@ -245,7 +245,7 @@ header {
 
 @media (max-width: 1199px) {
     .overlapping_text h2 {
-        font-size: calc(8vw);
+        font-size: 8vw;
     }
 }
 
