@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function onLoad() {
     const menu = document.querySelector(".menu");
     const menuItems = document.querySelectorAll(".menu_item");
     const hamburger = document.querySelector(".hamburger");
@@ -24,4 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
             menuItem.addEventListener("click", toggleMenu);
         }
     )
-});
+}
+
+document.addEventListener("DOMContentLoaded", onLoad);
