@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function toggleMenu() {
         if (menu.style.transform.includes("Y(0")) {
-            menu.style.transform = "translateY(-100%)";
+            menu.style.removeProperty("transform");
             burgerClose.style.display = "none";
             burgerOpen.style.display = "block";
         } else {
